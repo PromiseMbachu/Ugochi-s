@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="navbar">
         <h1>Favour<span style = "color:red">Writes</span></h1>
+        <div class="icon" id="icon">
+            &#9776;
+        </div>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a>Services</a></li>
-            <li><a href="Click.html">Click here please</a></li>
         </ul>
+        </div>
     </div>
     <div class="body">
         <div class="text">
@@ -30,5 +33,12 @@
         <h1>I Am Your Expert Writer</h1>
         <p>I apply different writing techniques in any perspective</p>
     </div>
+
+    <script>
+        const icon = document.getElementById('icon');
+        const navbar = document.getElementById('navbar');
+
+        icon.addEventListener('click', () => {navbar.classList.toggle('visible');});
+    </script>
 </body>
 </html>
